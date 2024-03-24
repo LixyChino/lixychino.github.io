@@ -86,3 +86,7 @@ div{
 .container {
 	display: flex;
 }
+
+.lixyinfo {
+	text-align: left;
+}
