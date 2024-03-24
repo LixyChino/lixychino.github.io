@@ -79,13 +79,13 @@ div{
 
 .container {
 	display: flex;
+	box-shadow: 5px 5px 20px;
+	margin: 30px;
 }
 
 .lixyinfo {
 	text-align: left;
 	font-size: 20px;
-	box-shadow: 5px 5px 20px;
-	margin: 30px;
 }
 
 .aboutpage {
