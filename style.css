@@ -90,3 +90,7 @@ div{
 .lixyinfo {
 	text-align: left;
 }
+
+.aboutpage {
+	background-color: linear-gradient(300deg, #ff66c4, #dbd662)
+}
