@@ -93,8 +93,11 @@ div{
 
 .aboutpage {
 	background: linear-gradient(150deg, #ff66c4, #dbd662);
-	height: 50px;
-	display: inline-flex;
-	align-items: center;
-	color: #FFFFFF;
+height: 50px;
+display: inline-flex;
+align-items: center;
+color: #FFFFFF;
+font-size: 20px;
+padding-left: 350px;
+padding-right: 350px;
 }
