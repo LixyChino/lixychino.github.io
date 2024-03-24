@@ -7,9 +7,14 @@ font-family: "Lato";
 }
 
 h1 {
-font-family: Lato";
-text-align: center;
-font-size: 50px;
+	font-family: Lato";
+	text-align: center;
+	font-size: 50px;
+	padding: 1rem 2rem;
+	color: #fff;
+	background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+	background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+	background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 a {
@@ -61,14 +66,6 @@ text-align: center;
 .btn-partial-line:hover {
   padding-left: 0.7em;
   padding-right: 0.3em;
-}
-
-h2 {
-  padding: 1rem 2rem;
-  color: #fff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
-  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 body{
