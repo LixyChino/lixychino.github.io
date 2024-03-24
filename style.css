@@ -100,5 +100,7 @@ div{
 	font-family: Lato
 }
  .footer {
-	 background-color: #202020;
- }
+	background-color: #202020;
+	width: 5000px;
+	max-width: 100%;
+}
