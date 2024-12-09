@@ -1,0 +1,144 @@
+p {
+	font-family: "Lato";
+}
+
+li {
+	font-family: "Lato";
+}
+
+a {
+	font-family: "Lato";
+}
+
+body {
+    width: 100%;
+}
+
+.main {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 80vw;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 0px 20px;
+	margin: 0 auto;
+	width: 1214px;
+}
+
+.lixyinfo {
+	text-align: left;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.aboutpage {
+	background: linear-gradient(150deg, #6f4dff, #80fffe);
+	width: 100vw;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: "Lato";
+}
+
+.footer {
+	background-color: #202020;
+	width: 5000px;
+	max-width: 100%;
+	height: 300px;
+	margin: 0px;
+	padding-top: 25px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.footerlink {
+	color: #fff;
+	text-align: left;
+	font-size: 14px;
+}
+
+.footerms {
+	color: #ffffff;
+	text-align: center;
+}
+
+.footercontent {
+	display: flex;
+	flex-direction: row;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.footerlinks {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
+}
+
+.header {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+}
+
+.pagetitle {
+	font-family: "Lato";
+	text-align: center;
+	width: 100vw;
+	font-size: 50px;
+	padding: 1rem 2rem;
+	color: #fff;
+	background: linear-gradient(150deg, #6f4dff, #80fffe);
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.items {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	flex-grow: 1;
+}
+
+.itemimage {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.barner {
+	width: 300px;
+	height: 60px;
+}
+
+.contsubtitle {
+	color: #fff;
+	text-align: left;
+}
+
+.googlesheet {
+	width: 70vw;
+	height: 400px;
+}
+
+#animation {
+	animation: fade-in 1s;
+	animation-fill-mode: forwards;
+  }
+  @keyframes fade-in {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
