@@ -1,1 +1,0 @@
-# lixychino.github.io
