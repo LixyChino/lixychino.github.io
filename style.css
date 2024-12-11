@@ -12,6 +12,7 @@ a {
 
 body {
     width: 100%;
+	margin: 0;
 }
 
 .main {
@@ -36,7 +37,6 @@ body {
 
 .aboutpage {
 	background: linear-gradient(150deg, #6f4dff, #80fffe);
-	width: 100vw;
 	text-align: center;
 	color: #FFFFFF;
 	font-size: 20px;
@@ -47,7 +47,7 @@ body {
 
 .footer {
 	background-color: #202020;
-	width: 5000px;
+	width: 100vw;
 	max-width: 100%;
 	height: 300px;
 	margin: 0px;
