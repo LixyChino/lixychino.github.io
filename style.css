@@ -169,3 +169,36 @@ body {
 	color: red;
 	font-weight: 600;
 }
+
+.rainbow {
+	font-size: 100px;
+	color: red;
+	font-weight: 700;
+	margin: 0;
+	background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        purple
+  );
+    background-size: 600% 100%;
+    animation: colorful 20s linear infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+@keyframes colorful {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 600% 0%;
+  }
+}
