@@ -2,10 +2,10 @@ name: Switch GitHub Pages to Redirect
 
 on:
   schedule:
-    # 7/1 00:00 JST（UTCでは6/30 15:00）
+    # 2026/7/1 00:00 JST（= 2026/6/30 15:00 UTC）
     - cron: '0 15 30 6 *'
 
-  # テスト用に手動実行もできる
+  # テスト用
   workflow_dispatch:
 
 permissions:
@@ -16,19 +16,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Replace with redirect page
+      - name: Replace pages with redirect
         run: |
           cp redirect/index.html index.html
+          cp redirect/404.html 404.html
 
-      - name: Commit
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add index.html
-          git commit -m "Switch GitHub Pages to redirect" || echo "No changes"
+          git add index.html 404.html
 
+          # 変更がなければ終了
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Switch GitHub Pages to redirect"
           git push
